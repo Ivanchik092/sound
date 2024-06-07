@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Історія запису звуку</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #2e2e2e;
+            color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: linear-gradient(135deg, #ffcc33, #ff9966);
+            color: #fff;
+            padding: 60px 20px;
+            text-align: center;
+            border-bottom: 5px solid #ff5722;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #1e1e1e;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section h2 {
+            border-left: 4px solid #ff5722;
+            padding-left: 10px;
+            margin-bottom: 20px;
+            color: #ffcc33;
+        }
+
+        .section p {
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .timeline {
+            position: relative;
+            list-style: none;
+            padding: 0;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: #ff5722;
+            transform: translateX(-50%);
+        }
+
+        .timeline-item {
+            position: relative;
+            width: 45%;
+            padding: 20px;
+            box-sizing: border-box;
+            background-color: #282828;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            color: #f5f5f5;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .timeline-item:nth-child(odd) {
+            left: 0;
+            text-align: right;
+        }
+
+        .timeline-item:nth-child(even) {
+            left: 55%;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            top: 20px;
+            right: -12px;
+            width: 24px;
+            height: 24px;
+            background: #ff5722;
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        .timeline-item:nth-child(even)::before {
+            left: -12px;
+            right: auto;
+        }
+
+        .timeline-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .timeline-item h3 {
+            margin-top: 0;
+            color: #ffab91;
+        }
+
+        .timeline-item p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Історія запису звуку</h1>
+    </header>
+    <div class="container">
+        <div class="section">
+            <h2>Що таке звук?</h2>
+            <p>Звук — коливальний рух частинок середовища, що поширюється у вигляді хвиль у газі, рідині чи твердому тілі.
+                Органи слуху людини сприймають звуки у відносно вузькому частотному діапазоні. Слуховий апарат багатьох 
+               тварин сприймає звуки в значно ширшому інтервалі частот.</p>
+                <img src="https://light-fizika.ru/images/images/11klass/Waves/DynamicAnimation.gif">
+            </div>
+        <ul class="timeline">
+            <li class="timeline-item">
+                <img src="phonograph.png" alt="Фонограф Едісона">
+                <h3>1877 рік - Фонограф Едісона</h3>
+                <p>Історія звукозапису розпочинається 12 серпня 1877 року, коли Едісон зробив перший у світі звукозапис, 
+                    зафіксувавши на циліндрі фонографа, що виступав той час носієм інформації, мелодію «Mary Had a Little Lamb».
+                    У фонограф постійно вносилися вдосконалення. Наприклад, олов'яна фольга, яка покривала валик, незабаром 
+                    змінилася тонким шаром воску. Проте, попри всі спроби, домогтися якісного і довговічного запису не вдавалось.                       
+                    </p>
+                    <p>
+                    <audio src="EDIS-SCD-02.mp3"controls></audio>
+                    </p>
+            </li>
+            <li class="timeline-item">
+                <img src="gramophone.png" alt="Грамофон Еміля Берлінера">
+                <h3>1887 рік - Грамофон Еміля Берлінера</h3>
+                <p>У 1888 р. німець Еміль Берлінер винайшов грамофон. Після запису фонограма покривалася лаком. Застосовуючи як оригінал цинк, протравленний в хромовій кислоті, отримували гальванопластичні копії. Перша грамофонна платівка була виготовлена з целулоїду. Трохи згодом почали застосовувати диски з шелаку, шпату і сажі. Пізніше шелак замінили синтетичними смолами. Під час гонінь на джаз, умільці знайшли вельми своєрідний вихід й використали для запису досить доступний матеріал — рентгенографічні плівки. Такі платівки були прозвани у народі записами «на кістках».</p>
+            </li>
+            <li class="timeline-item">
+                <img src="tape.png" alt="Магнітна стрічка">
+                <h3>1930-ті роки - Магнітна стрічка</h3>
+                <p>Попередником технології магнітного запису на стрічку є запис на магнітний дріт, винайдений 1898 року. У цьому першому винаході використовувалася тонка сталева дротина довжиною 2195 метрів (котушка — кілька сантиметрів у діаметрі), що протягувалася повз голівки запису і зчитування зі швидкістю 610 міліметрів за секунду. Запис на дріт довгий час знаходив застосування у записувальних пристроях літаків і космічних апаратів.
+
+                    Перші магнітні стрічки з'явилися у США і Німеччині приблизно у 1930-х роках, і спочатку мали паперову основу. В середині 1930-х німецькі компанії AEG, IG Farben і BASF розробили полімерну стрічку, яка активно використовувалася у магнітофонах у воєнний час.</p>
+            </li>
+            <li class="timeline-item">
+                <img src="cd.png" alt="Компакт-диск">
+                <h3>1980-ті роки - Цифровий запис</h3>
+                <p>Існує думка про те, що компакт-диск винайшли, зовсім не Philips і Sony, а американський фізик Джеймс Рассел. Винахідник компакт-диска, який працював у компанії Optical Recording, не заробив на ньому ні цента. Вже 1971 року він продемонстрував свій винахід для зберігання даних. Робив він це з «особистою» метою, оскільки бажав запобігти дряпанню своїх вінілових платівок голками звукознімачів. За вісім років подібний пристрій було «незалежно» винайдено компаніями Philips і Sony.</p>
+            </li>
+            <li class="timeline-item">
+                <img src="streaming.png" alt="Цифровий аудіо та стрімінг">
+                <h3>Сучасність - Цифровий аудіо та стрімінг</h3>
+                <p>Сьогодні звук записується та розповсюджується в цифровому форматі, а сервіси стрімінгу дозволяють миттєво отримувати доступ до музики та інших аудіозаписів з будь-якої точки світу.</p>
+            </li>
+        </ul>
+        <img src="https://www.netanimations.net/Colorful-musical-notes-zoom-past-you.gif">
+    </div>
+</body>
+</html>
